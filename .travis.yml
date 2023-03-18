@@ -17,6 +17,19 @@ cache:
 
 script: "./gradlew clean build"
 
+deploy:
+  - provider: s3
+    access_key_id: springboot-deploy # Travis repo settings에 설정된 값
+    secret_access_key: ppRS}6+* # Travis repo settings에 설정된 값
+    bucket: springboot-webbucket # 생성한 S3 버킷
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: public_read
+    wait-until-deployed: true
+    on:
+      repo: postwoong/Cemtoo2 #Github 주소
+      branch: master
+
 # CI 실행 완료 시 메일로 알림
 notifications:
   email:
