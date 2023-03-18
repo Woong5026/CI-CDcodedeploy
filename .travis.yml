@@ -27,7 +27,7 @@ deploy:
     acl: public_read
     wait-until-deployed: true
     on:
-      repo: postwoong/Cemtoo2 #Github 주소
+      repo: postwoong/Cemtoo2
       branch: master
 
 # CI 실행 완료 시 메일로 알림
