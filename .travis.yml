@@ -18,9 +18,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r Cemtoo2-webservice *
+  - zip -r springboot-webservice ./*
   - mkdir -p deploy
-  - mv Cemtoo2.zip deploy/Cemtoo2.zip
+  - mv springboot-webservice.zip deploy/springboot-webservice.zip
 
 deploy:
   - provider: s3
