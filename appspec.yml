@@ -5,14 +5,14 @@ files:
     destination: /home/ubuntu/app/travis/build/ # source에서 지정된 파일을 받을 위치
     overwrite: yes # 기존 파일 덮어쓰기 허용
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: ubuntu
-    group: ubuntu
-
-hooks:
-  AfterInstall: # 파일이 도착 후 실행
-    - location: execute-deploy.sh
-      timeout: 60 # 60 안에 실행, 60 뒤엔 배포 실패로 변경
-      runas: ubuntu
+#permissions:
+#  - object: /
+#    pattern: "**"
+#    owner: ubuntu
+#    group: ubuntu
+#
+#hooks:
+#  AfterInstall: # 파일이 도착 후 실행
+#    - location: execute-deploy.sh
+#      timeout: 60 # 60 안에 실행, 60 뒤엔 배포 실패로 변경
+#      runas: ubuntu
