@@ -4,4 +4,5 @@
 
 <br/>
 
-CI/CD + CodeDeploy 자동배포
+CI/CD <br/>
+CodeDeploy + TravisCi 
